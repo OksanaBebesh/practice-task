@@ -115,7 +115,7 @@ class SnowRabbit extends Animal implements CombWool, Herbivore {
 
 }
 
-class Tiger extends Animal implements Carnivore {
+class Tiger extends Animal implements Carnivore, CombWool {
     
     public string $name;
   
@@ -129,6 +129,10 @@ class Tiger extends Animal implements Carnivore {
     
     public function eatMeat() {
       echo 'I like rabbits, deer, roe deer, wild boar!\n';
+    }
+
+    public function combWool() {
+      echo 'I like to be combed!';
     }
     
 }
@@ -159,7 +163,7 @@ class Rhino extends Animal implements Herbivore {
 
 } 
 
-class SnowLeopard extends Animal implements Carnivore  {
+class SnowLeopard extends Animal implements Carnivore, CombWool  {
       
     public string $name;
   
@@ -174,6 +178,10 @@ class SnowLeopard extends Animal implements Carnivore  {
     public function eatMeat() {
       echo 'I like rabbits, roe deer, wild boar, hares, marmots!\n';
     }   
+
+    public function combWool() {
+      echo 'I like to be combed!';
+    }
       
 } 
 
